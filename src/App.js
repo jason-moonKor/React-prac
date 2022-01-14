@@ -8,18 +8,25 @@ function App() {
 
 	let [aa, aaa] = useState(0);
 
+	// function 제목바꾸기() {
+	// 	let arr = [...글제목]; //state data 변경하는법
+	// 	arr[0] = "arr 로 글제목바꾸기";
+	// 	글제목변경(arr);
+	// }
+
 	return (
 		<div className="App">
 			<div className="black-nav">
 				<div style={{color: "red"}}>개발 Blog</div>
 			</div>
-			<button
-				onClick={() => {
-					글제목변경(["글자가바뀐다1", "useState2", "useState3"]);
-				}}
+			{/* <button
+				// onClick={() => {
+				// 	글제목변경(["글자가바뀐다1", "useState2", "useState3"]);
+				// }}
+				onClick={제목바꾸기}
 			>
-				글제목 바꾸기
-			</button>
+				글제목 바꾸기 버튼
+			</button> */}
 			<div className="list">
 				{/* <h2>{aa}</h2>
 				<h2>{bb()}</h2>
@@ -49,6 +56,18 @@ function App() {
 				<p>테스트p태그3</p>
 				<hr />
 			</div>
+
+			<Modal />
+		</div>
+	);
+}
+
+function Modal() {
+	return (
+		<div className="modal">
+			<h2>제목</h2>
+			<p>날짜</p>
+			<p>상세내용</p>
 		</div>
 	);
 }

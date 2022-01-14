@@ -22,3 +22,9 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
+
+.modal {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #eee;
+}
