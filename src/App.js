@@ -56,6 +56,18 @@ function App() {
 				<p>테스트p태그3</p>
 				<hr />
 			</div>
+			<label for="aa">click datalist</label>
+			<input type={"text"} list="list_test" />
+			<datalist id="list_test">
+				<option value={"aaa"} />
+				<option value={"jason"} />
+				<option value={"jaesang"} />
+				<option value={"power"} />
+				<option value={"money"} />
+				<option value={"key"} />
+				<option value={"dunk"} />
+				<option value={"nike"} />
+			</datalist>
 
 			<Modal />
 		</div>
@@ -65,9 +77,7 @@ function App() {
 function Modal() {
 	return (
 		<div className="modal">
-			<h2>제목</h2>
-			<p>날짜</p>
-			<p>상세내용</p>
+			<h2>this is modal</h2>
 		</div>
 	);
 }
